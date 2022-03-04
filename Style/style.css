@@ -1,0 +1,119 @@
+*,*::before,*:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsla(0,0%,59%,1);
+}
+main{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 88px 24px;
+}
+section{
+    padding: 48px;
+    border-radius: 8px;
+}
+img{
+    max-width: 64px;
+    max-height: 40px;
+}
+h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: hsla(0, 0%, 95%, 1);
+    margin-top: 25px;
+    font-family: 'Big Shoulders Display', cursive;
+}
+p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    color: hsla(0, 0%, 100%, 1);
+    margin-top: 25px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+a{
+    text-decoration: none;
+    width: 146px;
+    height: 48px;
+    background-color: hsla(0, 0%, 95%, 1);
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-top: 36px;
+    text-align: center;
+    border-radius: 25px;
+    
+}
+.button{
+    width: 146px;
+    height: 48px;
+    background-color: hsla(0, 0%, 95%, 1);
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-top: 36px;
+    text-align: center;
+    border-radius: 25px;
+    font-family: 'Lexend Deca', sans-serif;
+    padding-top: 15px;
+    display: block;
+    margin-bottom: 7px;
+}
+.sedan{
+    background-color: 
+    hsla(31, 76%, 52%, 1);
+}
+
+.button1{
+    color: hsla(31, 76%, 52%, 1);
+    
+}
+
+.suvs{
+    background-color: 
+    hsla(184, 100%, 22%, 1);
+    margin-top: -8px;
+}
+.button2{
+    color: hsla(184, 100%, 22%, 1);
+
+}
+.luxury{
+    background-color: 
+    hsla(179, 100%, 13%, 1);
+    margin-top: -8px;
+}
+.button3{
+    color: 
+    hsla(179, 100%, 13%, 1);
+}
+
+@media screen and (min-width: 920px){
+    body{
+        min-height: 100VH;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    Main{
+        flex-flow: row;
+        max-width: 920px;
+    }
+    .sedan{
+        margin: 0px;
+    }
+    .suvs, .luxury{
+        margin: 0px 0px 0px -8px;
+    }
+    .button{
+        transition: .35s ease-in-out;
+    }
+    .button:hover{
+        color: hsla(0, 0%, 95%, 1);
+        background-color: transparent;
+        border: 2px solid hsla(0, 0%, 95%, 1);
+    }
+}
